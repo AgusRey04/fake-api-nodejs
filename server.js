@@ -97,7 +97,6 @@ app.post('/register', (req, res) => {
 app.post('/login', (req, res) => {
   loginHandler(db, req, res);
 });
-
 // Renew Token request
 app.post('/refresh-token', (req, res) => {
   refreshTokenHandler(req, res);

@@ -1,10 +1,7 @@
 import formidable from 'formidable';
 import { copyFile, unlink } from 'fs/promises';
-import {
-  generateAccessToken,
-  generateRefreshToken,
-  decodeRefreshToken,
-} from '../utils/jwt-authenticate.js';
+import { generateAccessToken, generateRefreshToken, decodeRefreshToken } from '../utils/jwt-authenticate.js';
+
 
 const handleUploadFile = async (req, file) => {
   const uploadFolder = 'uploads';
@@ -29,28 +26,22 @@ export const testHandler = (db, req, res) => {
   res.jsonp('Hello world!');
 };
 
+
 export const loginHandler = (db, req, res) => {
-  const { username, email, password: pwd } = req.body;
+  const { username, password } = req.body;
+  const users = db.data.users;
 
-  const user = db.data.users?.find(
-    (u) => (u.username === username || u.email === email) && u.password === pwd
-  );
+  const user = users.find((user) => user.username === username);
 
-  if (user && user.password === pwd) {
+  if (user && user.password === password) {
     const accessToken = generateAccessToken(user);
     const refreshToken = generateRefreshToken(user);
-    const { password, ...userWithoutPassword } = user;
 
-    res.jsonp({
-      ...userWithoutPassword,
-      accessToken,
-      refreshToken,
-    });
+    res.json({ message: "Login successful ddddddddddddd", accessToken, refreshToken });
   } else {
-    res.status(400).jsonp({ message: 'Username or password is incorrect!' });
+    res.status(400).json({ message: "Usuario o contraseña incorrectos ddddddddddddddddddd" });
   }
 };
-
 export const refreshTokenHandler = (req, res) => {
   const { token } = req.body;
 

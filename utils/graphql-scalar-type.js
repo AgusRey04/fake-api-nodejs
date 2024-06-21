@@ -36,8 +36,8 @@ function ensureObject(value, ast) {
       `JSONObject cannot represent non-object value: ${value}`,
       ast
         ? {
-            nodes: ast,
-          }
+          nodes: ast,
+        }
         : undefined
     );
   }

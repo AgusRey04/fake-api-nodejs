@@ -108,6 +108,7 @@ app.post('/upload-file', uploadFileHandler);
 // Upload multiple files
 app.post('/upload-files', uploadFilesHandler);
 
+
 // Access control
 app.use((req, res, next) => {
   const protectedResources = db.data.protectedResources;

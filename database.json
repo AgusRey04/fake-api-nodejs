@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": 0,
       "firstName": "Admin",
       "lastName": "",
       "username": "admin",
@@ -10,7 +10,21 @@
       "phone": "933-658-1213",
       "addres": "xxxxx",
       "status": true
+    },
+    {
+      "id": 1,
+      "firstName": "Agustín",
+      "lastName": "Reymundez",
+      "username": "AgusRey",
+      "email": "reymundez37@gmail.com",
+      "password": "1234",
+      "phone": "03416068080",
+      "addres": "chubut 2586",
+      "status": true,
+      "createdAt": 1719095738062,
+      "modifiedAt": 1719095738062
     }
+    
   ],
   "products": [
     {
@@ -57,6 +71,17 @@
       "price": 649.99,
       "img": "https://i.blogs.es/a22729/captura-de-pantalla-2020-11-18-a-las-20.55.29/original.png",
       "available": true
+    },
+    {
+      "name": "dsad",
+      "brand": "asdasd",
+      "type": "asdasd",
+      "price": "5",
+      "img": "asdasd",
+      "available": true,
+      "id": 7,
+      "createdAt": 1719067639017,
+      "modifiedAt": 1719067639017
     }
   ]
 }

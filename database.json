@@ -23,8 +23,20 @@
       "status": true,
       "createdAt": 1719095738062,
       "modifiedAt": 1719095738062
+    },
+    {
+      "id": 2,
+      "firstName": "Marcelo",
+      "lastName": "Reymundez",
+      "username": "Marcelo",
+      "email": "Marcelo37@gmail.com",
+      "password": "444",
+      "phone": "03416068080",
+      "address": "chubut 2586",
+      "status": true,
+      "createdAt": 1719429539449,
+      "modifiedAt": 1719429539449
     }
-    
   ],
   "products": [
     {

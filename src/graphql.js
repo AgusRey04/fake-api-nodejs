@@ -56,7 +56,7 @@ export const setupRootValue = (db) => {
       let maxId = 0;
       for (let o of objects) {
         if (o.id > maxId) {
-          maxId = o.id;
+          maxId = o.id + 1;
         }
       }
       const newObject = { id: maxId + 1, ...objectData };

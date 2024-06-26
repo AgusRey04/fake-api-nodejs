@@ -102,7 +102,7 @@ export const registerHandler = (db, req, res) => {
   let maxId = 0;
   for (let u of users) {
     if (u.id > maxId) {
-      maxId = u.id;
+      maxId = u.id + 1;
     }
   }
   const newUser = { id: maxId + 1, ...req.body };

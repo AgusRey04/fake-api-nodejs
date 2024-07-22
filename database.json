@@ -3,6 +3,7 @@
     {
       "id": 0,
       "firstName": "Admin",
+      "rol": "admin",
       "lastName": "",
       "username": "admin",
       "email": "admin@gmail.com",
@@ -13,6 +14,7 @@
     },
     {
       "id": 1,
+      "rol": "user",
       "firstName": "Agustín",
       "lastName": "Reymundez",
       "username": "AgusRey",
@@ -26,6 +28,7 @@
     },
     {
       "id": 2,
+      "rol": "user",
       "firstName": "Marcelo",
       "lastName": "Reymundez",
       "username": "Marcelo",
@@ -36,6 +39,20 @@
       "status": true,
       "createdAt": 1719429539449,
       "modifiedAt": 1719429539449
+    },
+    {
+      "id": 3,
+      "firstName": "Agustín",
+      "lastName": "Reymundez",
+      "username": "ssssss",
+      "email": "reymundez37sss@gmail.com",
+      "password": "444",
+      "phone": "03416068080",
+      "address": "chubut 2586",
+      "status": true,
+      "rol": "user",
+      "createdAt": 1719617943433,
+      "modifiedAt": 1719617943433
     }
   ],
   "products": [
@@ -53,9 +70,10 @@
       "name": "Memoria RAM Corsair Vengeance RGB Pro 16GB",
       "brand": "Corsair",
       "type": "Memoria RAM",
-      "price": 129.99,
+      "price": "12",
       "img": "https://m.media-amazon.com/images/I/51jnTiyHJUL.jpg",
-      "available": false
+      "available": false,
+      "modifiedAt": 1719617742131
     },
     {
       "id": 4,
